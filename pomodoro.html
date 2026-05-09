@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🍅 番茄时钟</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    display: flex; justify-content: center; align-items: center;
+    min-height: 100vh; background: #1a1a2e; user-select: none;
+  }
+  .container {
+    text-align: center; padding: 48px 40px; border-radius: 32px;
+    background: #16213e; box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+  }
+  h1 { color: #e94560; font-size: 28px; margin-bottom: 8px; letter-spacing: 2px; }
+  .mode-tabs {
+    display: flex; gap: 6px; justify-content: center; margin-bottom: 32px;
+    background: #0f3460; border-radius: 12px; padding: 4px;
+  }
+  .mode-tab {
+    border: none; background: transparent; color: #a0a0b8;
+    padding: 8px 20px; border-radius: 9px; cursor: pointer;
+    font-size: 14px; transition: all 0.2s;
+  }
+  .mode-tab.active { background: #e94560; color: #fff; }
+  .timer-ring {
+    position: relative; width: 280px; height: 280px; margin: 0 auto 24px;
+  }
+  .timer-ring svg { transform: rotate(-90deg); }
+  .ring-bg { fill: none; stroke: #0f3460; stroke-width: 10; }
+  .ring-progress {
+    fill: none; stroke: #e94560; stroke-width: 10; stroke-linecap: round;
+    transition: stroke-dashoffset 0.3s linear;
+  }
+  .time-display {
+    position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+    font-size: 64px; font-weight: 700; color: #eee; letter-spacing: 2px;
+    font-variant-numeric: tabular-nums;
+  }
+  .controls { display: flex; gap: 12px; justify-content: center; margin-bottom: 24px; }
+  .btn {
+    border: none; padding: 12px 32px; border-radius: 12px;
+    font-size: 16px; font-weight: 600; cursor: pointer; transition: all 0.15s;
+  }
+  .btn:active { transform: scale(0.96); }
+  .btn-start { background: #e94560; color: #fff; }
+  .btn-start:hover { background: #d63851; }
+  .btn-pause { background: #f0a500; color: #1a1a2e; }
+  .btn-pause:hover { background: #d49100; }
+  .btn-reset { background: #333; color: #888; }
+  .btn-reset:hover { background: #444; }
+  .stats {
+    color: #888; font-size: 14px; display: flex; gap: 24px; justify-content: center;
+  }
+  .stats span { color: #e94560; font-weight: 700; font-size: 18px; }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>🍅 番茄时钟</h1>
+  <div class="mode-tabs">
+    <button class="mode-tab active" id="tabWork" onclick="switchMode('work')">工作 25 分钟</button>
+    <button class="mode-tab" id="tabShort" onclick="switchMode('short')">短休 5 分钟</button>
+    <button class="mode-tab" id="tabLong" onclick="switchMode('long')">长休 15 分钟</button>
+  </div>
+  <div class="timer-ring">
+    <svg width="280" height="280">
+      <circle class="ring-bg" cx="140" cy="140" r="125"/>
+      <circle class="ring-progress" id="ring" cx="140" cy="140" r="125"
+              stroke-dasharray="785" stroke-dashoffset="0"/>
+    </svg>
+    <div class="time-display" id="timeDisplay">25:00</div>
+  </div>
+  <div class="controls">
+    <button class="btn btn-start" id="btnStart" onclick="toggleTimer()">开始</button>
+    <button class="btn btn-reset" onclick="resetTimer()">重置</button>
+  </div>
+  <div class="stats">
+    已完成 <span id="pomoCount">0</span> 个番茄
+  </div>
+</div>
+
+<script>
+const CIRCUMFERENCE = 2 * Math.PI * 125; // ~785
+const MODES = {
+  work: { label: '工作 25 分钟', seconds: 25 * 60 },
+  short: { label: '短休 5 分钟', seconds: 5 * 60 },
+  long: { label: '长休 15 分钟', seconds: 15 * 60 }
+};
+
+let mode = 'work';
+let secondsLeft = MODES.work.seconds;
+let totalSeconds = MODES.work.seconds;
+let interval = null;
+let running = false;
+let pomoCount = 0;
+
+const ring = document.getElementById('ring');
+const timeDisplay = document.getElementById('timeDisplay');
+const btnStart = document.getElementById('btnStart');
+const tabs = { work: document.getElementById('tabWork'), short: document.getElementById('tabShort'), long: document.getElementById('tabLong') };
+
+ring.style.strokeDasharray = CIRCUMFERENCE;
+ring.style.strokeDashoffset = '0';
+
+function formatTime(s) {
+  const m = Math.floor(s / 60);
+  const sec = s % 60;
+  return String(m).padStart(2, '0') + ':' + String(sec).padStart(2, '0');
+}
+
+function updateDisplay() {
+  timeDisplay.textContent = formatTime(secondsLeft);
+  const fraction = secondsLeft / totalSeconds;
+  ring.style.strokeDashoffset = CIRCUMFERENCE * (1 - fraction);
+}
+
+function switchMode(newMode) {
+  clearInterval(interval);
+  interval = null;
+  running = false;
+  mode = newMode;
+  secondsLeft = MODES[mode].seconds;
+  totalSeconds = MODES[mode].seconds;
+  Object.keys(tabs).forEach(k => tabs[k].classList.toggle('active', k === mode));
+  btnStart.textContent = '开始';
+  btnStart.className = 'btn btn-start';
+  updateDisplay();
+}
+
+function toggleTimer() {
+  if (running) {
+    clearInterval(interval);
+    interval = null;
+    running = false;
+    btnStart.textContent = '继续';
+    btnStart.className = 'btn btn-start';
+    return;
+  }
+
+  if (secondsLeft <= 0) return;
+
+  running = true;
+  btnStart.textContent = '暂停';
+  btnStart.className = 'btn btn-pause';
+
+  interval = setInterval(() => {
+    secondsLeft--;
+    updateDisplay();
+    if (secondsLeft <= 0) {
+      clearInterval(interval);
+      interval = null;
+      running = false;
+      btnStart.textContent = '开始';
+      btnStart.className = 'btn btn-start';
+      if (mode === 'work') {
+        pomoCount++;
+        document.getElementById('pomoCount').textContent = pomoCount;
+      }
+      notify();
+    }
+  }, 1000);
+}
+
+function resetTimer() {
+  clearInterval(interval);
+  interval = null;
+  running = false;
+  secondsLeft = MODES[mode].seconds;
+  totalSeconds = MODES[mode].seconds;
+  btnStart.textContent = '开始';
+  btnStart.className = 'btn btn-start';
+  updateDisplay();
+}
+
+function notify() {
+  const title = mode === 'work' ? '工作完成！' : '休息结束！';
+  const body = mode === 'work' ? '太棒了，休息一下吧 ☕' : '准备开始下一个番茄 🍅';
+  if (Notification.permission === 'granted') {
+    new Notification(title, { body });
+  }
+  // Audio beep
+  try {
+    const ctx = new (window.AudioContext || window.webkitAudioContext)();
+    const osc = ctx.createOscillator();
+    const gain = ctx.createGain();
+    osc.connect(gain); gain.connect(ctx.destination);
+    osc.frequency.value = 800; osc.type = 'sine';
+    gain.gain.value = 0.3;
+    osc.start(ctx.currentTime);
+    osc.frequency.setValueAtTime(1000, ctx.currentTime + 0.1);
+    osc.frequency.setValueAtTime(600, ctx.currentTime + 0.3);
+    gain.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + 0.6);
+    osc.stop(ctx.currentTime + 0.6);
+  } catch(e) {}
+}
+
+// Request notification permission on first click
+document.addEventListener('click', () => {
+  if (Notification.permission === 'default') {
+    Notification.requestPermission();
+  }
+}, { once: true });
+
+updateDisplay();
+</script>
+</body>
+</html>
