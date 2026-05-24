@@ -1,0 +1,512 @@
+﻿[
+  {
+    "id": "pectoralis-major-upper",
+    "name": "胸大肌上部",
+    "nameEn": "Upper Pectoralis Major",
+    "region": "chest",
+    "regionName": "胸部",
+    "subregion": "upper-chest",
+    "subregionName": "上胸部",
+    "description": "胸大肌是胸部最大、最表浅的扇形肌肉，覆盖前胸壁大部分区域。上部纤维（锁骨部）起于锁骨内侧半，止于肱骨大结节嵴。主要功能包括肩关节水平内收、内旋以及前屈。上胸部的发达程度决定了胸部整体的饱满度和立体感，上斜卧推类动作可重点刺激该区域。",
+    "functions": ["肩关节水平内收", "肩关节内旋", "肩关节前屈（上部纤维主导）"],
+    "bodyMapPositions": {
+      "front": { "cx": 38, "cy": 22, "rx": 9, "ry": 6, "label": "上胸" },
+      "back": null
+    }
+  },
+  {
+    "id": "pectoralis-major-middle",
+    "name": "胸大肌中部",
+    "nameEn": "Middle Pectoralis Major",
+    "region": "chest",
+    "regionName": "胸部",
+    "subregion": "middle-chest",
+    "subregionName": "中胸部",
+    "description": "胸大肌中部（胸骨部）是胸大肌最大的部分，起于胸骨和第2-6肋软骨前面，止于肱骨大结节嵴。这是胸部厚度和宽度的主要来源，也是平板卧推等经典动作的主要刺激区域。发达的胸大肌中部可以让胸部看起来厚实有力。",
+    "functions": ["肩关节水平内收", "肩关节内旋", "肩关节内收"],
+    "bodyMapPositions": {
+      "front": { "cx": 44, "cy": 25, "rx": 11, "ry": 8, "label": "中胸" },
+      "back": null
+    }
+  },
+  {
+    "id": "pectoralis-major-lower",
+    "name": "胸大肌下部",
+    "nameEn": "Lower Pectoralis Major",
+    "region": "chest",
+    "regionName": "胸部",
+    "subregion": "lower-chest",
+    "subregionName": "下胸部",
+    "description": "胸大肌下部（腹部）起于腹直肌鞘前层，止于肱骨大结节嵴。下部纤维决定了胸部的下沿轮廓和清晰度。下斜卧推和双杠臂屈伸是锻炼下胸的黄金动作。下胸的线条分明是胸肌美观度的关键指标。",
+    "functions": ["肩关节水平内收", "肩关节内旋", "肩关节伸展（下部纤维）"],
+    "bodyMapPositions": {
+      "front": { "cx": 50, "cy": 30, "rx": 11, "ry": 7, "label": "下胸" },
+      "back": null
+    }
+  },
+  {
+    "id": "pectoralis-minor",
+    "name": "胸小肌",
+    "nameEn": "Pectoralis Minor",
+    "region": "chest",
+    "regionName": "胸部",
+    "subregion": "deep-chest",
+    "subregionName": "深层胸部",
+    "description": "胸小肌位于胸大肌深层，起于第3-5肋骨，止于肩胛骨喙突。其主要功能是拉肩胛骨向前下方（前伸）和稳定肩胛骨。虽然表面不可见，但胸小肌的紧张是现代人圆肩驼背问题的重要诱因，适当拉伸对体态改善很有帮助。",
+    "functions": ["肩胛骨前伸", "肩胛骨下降", "辅助呼吸（深吸气时提肋）"],
+    "bodyMapPositions": {
+      "front": null,
+      "back": null
+    }
+  },
+  {
+    "id": "serratus-anterior",
+    "name": "前锯肌",
+    "nameEn": "Serratus Anterior",
+    "region": "chest",
+    "regionName": "胸部",
+    "subregion": "side-chest",
+    "subregionName": "侧胸部",
+    "description": "前锯肌位于胸廓侧面，起于上8或9根肋骨，止于肩胛骨内侧缘及下角。因其锯齿状附着于肋骨侧面而得名，发达的「前锯肌像手指一样排列在腋下侧面，是健美比赛中重要的视觉效果肌肉。」拳击手的「刺拳」动作高度依赖前锯肌的力量。」",
+    "functions": ["肩胛骨前伸（推离动作）", "肩胛骨上回旋", "稳定肩胛骨于胸廓"],
+    "bodyMapPositions": {
+      "front": { "cx": 62, "cy": 30, "rx": 5, "ry": 10, "label": "前锯肌" },
+      "back": null
+    }
+  },
+  {
+    "id": "latissimus-dorsi",
+    "name": "背阔肌",
+    "nameEn": "Latissimus Dorsi",
+    "region": "back",
+    "regionName": "背部",
+    "subregion": "mid-back",
+    "subregionName": "中背部",
+    "description": "背阔肌是人体最大的一块扁肌，覆盖背部下半部分和侧腰部，起于下6个胸椎棘突、全部腰椎棘突、骶骨及髂嵴后部，止于肱骨小结节嵴。它形成了倒三角体型的底部宽度。发达的背阔肌从背后看如同展开的翅膀，是体现上肢力量的重要标志。",
+    "functions": ["肩关节内收", "肩关节伸展", "肩关节内旋", "辅助呼吸"],
+    "bodyMapPositions": {
+      "front": null,
+      "back": { "cx": 50, "cy": 42, "rx": 18, "ry": 14, "label": "背阔肌" }
+    }
+  },
+  {
+    "id": "trapezius-upper",
+    "name": "斜方肌上部",
+    "nameEn": "Upper Trapezius",
+    "region": "back",
+    "regionName": "背部",
+    "subregion": "upper-back",
+    "subregionName": "上背部",
+    "description": "斜方肌上部起于枕外隆凸和项韧带，止于锁骨外侧1/3。主要功能是上提肩胛骨和肩胛骨上回旋（耸肩动作），并辅助头颈后仰。发达的斜方肌上部让颈部看起来粗壮有力，是整个上肢力量链的上端锚点。",
+    "functions": ["肩胛骨上提（耸肩）", "肩胛骨上回旋", "头颈后伸"],
+    "bodyMapPositions": {
+      "front": null,
+      "back": { "cx": 50, "cy": 14, "rx": 15, "ry": 6, "label": "斜方肌上部" }
+    }
+  },
+  {
+    "id": "trapezius-middle",
+    "name": "斜方肌中部",
+    "nameEn": "Middle Trapezius",
+    "region": "back",
+    "regionName": "背部",
+    "subregion": "upper-back",
+    "subregionName": "上背部",
+    "description": "斜方肌中部起于C7-T3棘突，止于肩峰及肩胛冈。主要功能是内收（回缩）肩胛骨，即将两侧肩胛骨向脊柱中线拉近。各种划船动作中肩胛骨的回缩主要由斜方肌中部和菱形肌协同完成。发达的中斜方肌形成背部的厚度和「沟壑感」。",
+    "functions": ["肩胛骨内收（回缩）", "稳定肩胛骨"],
+    "bodyMapPositions": {
+      "front": null,
+      "back": { "cx": 50, "cy": 20, "rx": 14, "ry": 5, "label": "斜方肌中部" }
+    }
+  },
+  {
+    "id": "trapezius-lower",
+    "name": "斜方肌下部",
+    "nameEn": "Lower Trapezius",
+    "region": "back",
+    "regionName": "背部",
+    "subregion": "mid-back",
+    "subregionName": "中背部",
+    "description": "斜方肌下部起于T4-T12棘突，止于肩胛冈内侧端。主要功能是下降肩胛骨和肩胛骨上回旋。下斜方肌对于维持良好的肩胛骨位置和肩关节健康至关重要——薄弱的下斜方肌常导致耸肩和肩关节撞击综合征。",
+    "functions": ["肩胛骨下降", "肩胛骨上回旋", "稳定肩胛骨"],
+    "bodyMapPositions": {
+      "front": null,
+      "back": { "cx": 50, "cy": 28, "rx": 10, "ry": 6, "label": "斜方肌下部" }
+    }
+  },
+  {
+    "id": "rhomboids",
+    "name": "菱形肌",
+    "nameEn": "Rhomboids",
+    "region": "back",
+    "regionName": "背部",
+    "subregion": "upper-back",
+    "subregionName": "上背部",
+    "description": "菱形肌（包括大菱形肌和小菱形肌）位于斜方肌深层，起于C7-T5棘突，止于肩胛骨内侧缘。主要功能是内收和上提肩胛骨。菱形肌是维持良好体态的关键肌肉——当它收缩时使肩胛骨向脊柱靠拢，帮助打开胸腔，对抗圆肩。",
+    "functions": ["肩胛骨内收", "肩胛骨上提", "肩胛骨下角内旋"],
+    "bodyMapPositions": {
+      "front": null,
+      "back": { "cx": 50, "cy": 22, "rx": 8, "ry": 5, "label": "菱形肌" }
+    }
+  },
+  {
+    "id": "erector-spinae",
+    "name": "竖脊肌",
+    "nameEn": "Erector Spinae",
+    "region": "back",
+    "regionName": "背部",
+    "subregion": "lower-back",
+    "subregionName": "下背部",
+    "description": "竖脊肌是沿脊柱两侧纵行排列的粗大肌群（由髂肋肌、最长肌和棘肌组成），起于骶骨背面和髂嵴，向上止于肋骨、椎骨和颅骨。它是维持人体直立姿势的核心肌肉，也是硬拉、深蹲等大重量复合动作中保护脊柱的关键力量来源。下背痛常与竖脊肌无力或失衡有关。",
+    "functions": ["脊柱后伸", "维持直立姿势", "控制脊柱前屈速度", "侧屈脊柱"],
+    "bodyMapPositions": {
+      "front": null,
+      "back": { "cx": 50, "cy": 50, "rx": 6, "ry": 18, "label": "竖脊肌" }
+    }
+  },
+  {
+    "id": "teres-major",
+    "name": "大圆肌",
+    "nameEn": "Teres Major",
+    "region": "back",
+    "regionName": "背部",
+    "subregion": "upper-back",
+    "subregionName": "上背部",
+    "description": "大圆肌起于肩胛骨下角背面，止于肱骨小结节嵴，与背阔肌的止点非常接近，因此被称为「背阔肌的小助手」。它辅助背阔肌完成肩关节内收、伸展和内旋。虽然体积不大，但在所有拉类动作中都有参与。",
+    "functions": ["肩关节内收", "肩关节伸展", "肩关节内旋"],
+    "bodyMapPositions": {
+      "front": null,
+      "back": { "cx": 68, "cy": 28, "rx": 5, "ry": 4, "label": "大圆肌" }
+    }
+  },
+  {
+    "id": "infraspinatus",
+    "name": "冈下肌",
+    "nameEn": "Infraspinatus",
+    "region": "back",
+    "regionName": "背部",
+    "subregion": "upper-back",
+    "subregionName": "上背部",
+    "description": "冈下肌是肩袖肌群中最大的一块，位于肩胛骨冈下窝，止于肱骨大结节。主要功能是肩关节外旋。它是维持肩关节稳定性的关键肌肉，肩袖损伤常涉及冈下肌腱。面拉等外旋训练可以有效强化冈下肌，预防肩部伤病。",
+    "functions": ["肩关节外旋", "肩关节稳定", "辅助肩关节水平外展"],
+    "bodyMapPositions": {
+      "front": null,
+      "back": { "cx": 62, "cy": 22, "rx": 6, "ry": 5, "label": "冈下肌" }
+    }
+  },
+  {
+    "id": "anterior-deltoid",
+    "name": "三角肌前束",
+    "nameEn": "Anterior Deltoid",
+    "region": "shoulders",
+    "regionName": "肩部",
+    "subregion": "front-shoulder",
+    "subregionName": "前肩",
+    "description": "三角肌前束起于锁骨外侧1/3，止于肱骨三角肌粗隆。主要功能是肩关节前屈、水平内收和内旋。它是推举类动作的主要参与者，在卧推中也有大量激活。由于日常生活中推的动作很多，前束通常不需要过多孤立训练，但均衡发展三个束对于肩关节健康非常重要。",
+    "functions": ["肩关节前屈", "肩关节水平内收", "肩关节内旋"],
+    "bodyMapPositions": {
+      "front": { "cx": 35, "cy": 18, "rx": 6, "ry": 5, "label": "三角肌前束" },
+      "back": null
+    }
+  },
+  {
+    "id": "lateral-deltoid",
+    "name": "三角肌中束",
+    "nameEn": "Lateral Deltoid",
+    "region": "shoulders",
+    "regionName": "肩部",
+    "subregion": "side-shoulder",
+    "subregionName": "侧肩",
+    "description": "三角肌中束起于肩峰，止于肱骨三角肌粗隆。主要功能是肩关节外展（手臂侧平举）。中束的发达程度直接决定了肩宽，是打造「倒三角」体型的上半部分关键。侧平举是最经典的中束孤立训练动作。发达的三角肌中束让肩膀看起来圆润饱满。",
+    "functions": ["肩关节外展"],
+    "bodyMapPositions": {
+      "front": { "cx": 28, "cy": 18, "rx": 5, "ry": 5, "label": "三角肌中束" },
+      "back": null
+    }
+  },
+  {
+    "id": "posterior-deltoid",
+    "name": "三角肌后束",
+    "nameEn": "Posterior Deltoid",
+    "region": "shoulders",
+    "regionName": "肩部",
+    "subregion": "rear-shoulder",
+    "subregionName": "后肩",
+    "description": "三角肌后束起于肩胛冈，止于肱骨三角肌粗隆。主要功能是肩关节后伸和水平外展。后束是三个束中最容易被忽视的部位，但它的发展对于肩部的三维立体感至关重要。现代人因久坐和使用手机导致的圆肩姿势往往伴随着后束薄弱。俯身飞鸟和面拉是锻炼后束的最佳动作。",
+    "functions": ["肩关节后伸", "肩关节水平外展", "肩关节外旋"],
+    "bodyMapPositions": {
+      "front": null,
+      "back": { "cx": 62, "cy": 18, "rx": 6, "ry": 5, "label": "三角肌后束" }
+    }
+  },
+  {
+    "id": "biceps-brachii",
+    "name": "肱二头肌",
+    "nameEn": "Biceps Brachii",
+    "region": "arms",
+    "regionName": "臂部",
+    "subregion": "front-upper-arm",
+    "subregionName": "上臂前侧",
+    "description": "肱二头肌是上臂前侧最表浅、最引人注目的肌肉，由长头和短头组成。长头起于肩胛骨盂上结节，短头起于喙突，两者合并止于桡骨粗隆。主要功能是屈肘和前臂旋后，同时对肩关节前屈有辅助作用。它是力量训练中最受关注的「秀肌肉」，弯举类动作是其主要训练方式。",
+    "functions": ["肘关节屈曲", "前臂旋后", "辅助肩关节前屈"],
+    "bodyMapPositions": {
+      "front": { "cx": 28, "cy": 36, "rx": 5, "ry": 12, "label": "肱二头肌" },
+      "back": null
+    }
+  },
+  {
+    "id": "brachialis",
+    "name": "肱肌",
+    "nameEn": "Brachialis",
+    "region": "arms",
+    "regionName": "臂部",
+    "subregion": "front-upper-arm",
+    "subregionName": "上臂前侧",
+    "description": "肱肌位于肱二头肌深层，起于肱骨下半段前面，止于尺骨粗隆。它是纯粹的肘关节屈肌，无论前臂处于何种旋转位置都能有效发力。发达的肱肌可以将肱二头肌「推」起来，使上臂看起来更加粗壮。锤式弯举和反握弯举可以更好地激活肱肌。",
+    "functions": ["肘关节屈曲（主要屈肘肌之一）"],
+    "bodyMapPositions": {
+      "front": { "cx": 28, "cy": 40, "rx": 4, "ry": 8, "label": "肱肌" },
+      "back": null
+    }
+  },
+  {
+    "id": "triceps-long-head",
+    "name": "肱三头肌长头",
+    "nameEn": "Triceps Brachii Long Head",
+    "region": "arms",
+    "regionName": "臂部",
+    "subregion": "back-upper-arm",
+    "subregionName": "上臂后侧",
+    "description": "肱三头肌长头是肱三头肌中唯一跨越肩关节的头部，起于肩胛骨盂下结节，止于尺骨鹰嘴。不仅参与伸肘，还辅助肩关节后伸和内收。长头占肱三头肌总体积的重要部分，过顶臂屈伸类动作能充分拉伸长头，刺激其生长。发达的肱三头肌长头为上臂提供后侧的饱满感。",
+    "functions": ["肘关节伸展", "辅助肩关节后伸", "辅助肩关节内收"],
+    "bodyMapPositions": {
+      "front": null,
+      "back": { "cx": 32, "cy": 36, "rx": 5, "ry": 12, "label": "肱三头肌长头" }
+    }
+  },
+  {
+    "id": "triceps-lateral-head",
+    "name": "肱三头肌外侧头",
+    "nameEn": "Triceps Brachii Lateral Head",
+    "region": "arms",
+    "regionName": "臂部",
+    "subregion": "back-upper-arm",
+    "subregionName": "上臂后侧",
+    "description": "肱三头肌外侧头起于肱骨后面桡神经沟以上的区域，止于尺骨鹰嘴。它是肱三头肌中外形最明显的头部，从侧面看形成了上臂后侧的「马蹄形」轮廓。推类动作（卧推、推举、臂屈伸）都能有效刺激外侧头。外侧头的发达程度决定了手臂从正面看的宽度感。",
+    "functions": ["肘关节伸展"],
+    "bodyMapPositions": {
+      "front": { "cx": 34, "cy": 34, "rx": 4, "ry": 10, "label": "肱三头肌外侧头" },
+      "back": null
+    }
+  },
+  {
+    "id": "forearm-flexors",
+    "name": "前臂屈肌群",
+    "nameEn": "Forearm Flexors",
+    "region": "arms",
+    "regionName": "臂部",
+    "subregion": "forearm-front",
+    "subregionName": "前臂前侧",
+    "description": "前臂屈肌群（主要包括桡侧腕屈肌、尺侧腕屈肌、指浅屈肌等）位于前臂前侧，起于肱骨内上髁，止于腕骨和手指骨骼。主要功能是屈腕和屈指。强有力的前臂屈肌群对于握力的产生至关重要——无论是硬拉中的握杠还是日常生活中的提握物品。",
+    "functions": ["腕关节屈曲", "手指屈曲", "前臂旋前"],
+    "bodyMapPositions": {
+      "front": { "cx": 28, "cy": 54, "rx": 4, "ry": 10, "label": "前臂屈肌" },
+      "back": null
+    }
+  },
+  {
+    "id": "forearm-extensors",
+    "name": "前臂伸肌群",
+    "nameEn": "Forearm Extensors",
+    "region": "arms",
+    "regionName": "臂部",
+    "subregion": "forearm-back",
+    "subregionName": "前臂后侧",
+    "description": "前臂伸肌群（主要包括桡侧腕伸肌、尺侧腕伸肌、指伸肌等）位于前臂后侧，起于肱骨外上髁，止于腕骨和手指骨骼。主要功能是伸腕和伸指。伸肌群与屈肌群的均衡发展对于腕关节健康非常重要——网球肘（肱骨外上髁炎）就是伸肌群过度使用引起的常见问题。",
+    "functions": ["腕关节伸展", "手指伸展", "前臂旋后"],
+    "bodyMapPositions": {
+      "front": null,
+      "back": { "cx": 32, "cy": 54, "rx": 4, "ry": 10, "label": "前臂伸肌" }
+    }
+  },
+  {
+    "id": "quadriceps",
+    "name": "股四头肌",
+    "nameEn": "Quadriceps Femoris",
+    "region": "legs",
+    "regionName": "腿部",
+    "subregion": "front-thigh",
+    "subregionName": "大腿前侧",
+    "description": "股四头肌是人体体积最大、力量最强的肌肉之一，由股直肌、股内侧肌、股外侧肌和股中间肌四个头组成。股直肌起于髂前下棘，其余三头起于股骨，四头共同经髌韧带止于胫骨粗隆。主要功能是伸膝关节（踢腿动作），股直肌还参与屈髋。深蹲和腿屈伸是训练股四头肌的核心动作。",
+    "functions": ["膝关节伸展（主要伸膝肌）", "股直肌辅助髋关节屈曲", "维持站立姿势"],
+    "bodyMapPositions": {
+      "front": { "cx": 44, "cy": 68, "rx": 8, "ry": 15, "label": "股四头肌" },
+      "back": null
+    }
+  },
+  {
+    "id": "hamstrings",
+    "name": "腘绳肌",
+    "nameEn": "Hamstrings",
+    "region": "legs",
+    "regionName": "腿部",
+    "subregion": "back-thigh",
+    "subregionName": "大腿后侧",
+    "description": "腘绳肌由股二头肌、半腱肌和半膜肌组成，位于大腿后侧。它们起于坐骨结节（股二头肌短头起于股骨），止于胫骨和腓骨。主要功能是屈膝和伸髋。腘绳肌是短跑运动员最重要的肌肉之一——强大的腘绳肌提供爆发性的髋伸展力量。腘绳肌拉伤是运动中常见的损伤，充分的热身和离心训练可以预防。",
+    "functions": ["膝关节屈曲", "髋关节伸展", "辅助髋关节内旋/外旋"],
+    "bodyMapPositions": {
+      "front": null,
+      "back": { "cx": 44, "cy": 72, "rx": 8, "ry": 14, "label": "腘绳肌" }
+    }
+  },
+  {
+    "id": "gluteus-maximus",
+    "name": "臀大肌",
+    "nameEn": "Gluteus Maximus",
+    "region": "legs",
+    "regionName": "腿部",
+    "subregion": "glutes",
+    "subregionName": "臀部",
+    "description": "臀大肌是人体最大的单块肌肉，也是最具力量的肌肉之一。起于髂骨翼外面、骶骨和尾骨后面，止于股骨臀肌粗隆和髂胫束。主要功能是髋关节伸展（将大腿向后推）、外旋和外展。它是人类直立行走和跑跳能力的关键肌肉。深蹲、硬拉和臀冲是发展臀大肌的最佳动作。发达的臀大肌不仅美观，还是核心力量和运动表现的基石。",
+    "functions": ["髋关节伸展", "髋关节外旋", "髋关节外展（上部纤维）", "维持骨盆稳定"],
+    "bodyMapPositions": {
+      "front": null,
+      "back": { "cx": 50, "cy": 58, "rx": 14, "ry": 8, "label": "臀大肌" }
+    }
+  },
+  {
+    "id": "gluteus-medius",
+    "name": "臀中肌",
+    "nameEn": "Gluteus Medius",
+    "region": "legs",
+    "regionName": "腿部",
+    "subregion": "glutes",
+    "subregionName": "臀部",
+    "description": "臀中肌位于臀大肌深层，起于髂骨翼外面，止于股骨大转子。主要功能是髋关节外展——即把腿向侧面抬起。臀中肌对维持骨盆在行走中的水平稳定至关重要：单腿站立时，支撑侧的臀中肌必须收缩以防止骨盆向对侧下沉。臀中肌薄弱会导致「臀中肌步态」和膝关节代偿性损伤。",
+    "functions": ["髋关节外展（主要外展肌）", "髋关节内旋（前部纤维）", "维持骨盆额状面稳定"],
+    "bodyMapPositions": {
+      "front": null,
+      "back": { "cx": 38, "cy": 56, "rx": 6, "ry": 5, "label": "臀中肌" }
+    }
+  },
+  {
+    "id": "adductors",
+    "name": "内收肌群",
+    "nameEn": "Adductors",
+    "region": "legs",
+    "regionName": "腿部",
+    "subregion": "inner-thigh",
+    "subregionName": "大腿内侧",
+    "description": "内收肌群（包括大收肌、长收肌、短收肌、耻骨肌和股薄肌）位于大腿内侧，起于耻骨和坐骨，止于股骨粗线和胫骨近端。主要功能是髋关节内收——将大腿向身体中线靠拢。强大的内收肌群对于深蹲时的稳定性和力量输出非常重要。忽视内收肌的训练可能导致腹股沟拉伤和力量不平衡。",
+    "functions": ["髋关节内收", "辅助髋关节屈曲", "辅助髋关节伸展"],
+    "bodyMapPositions": {
+      "front": { "cx": 56, "cy": 70, "rx": 5, "ry": 14, "label": "内收肌群" },
+      "back": null
+    }
+  },
+  {
+    "id": "gastrocnemius",
+    "name": "腓肠肌",
+    "nameEn": "Gastrocnemius",
+    "region": "legs",
+    "regionName": "腿部",
+    "subregion": "calf",
+    "subregionName": "小腿后侧",
+    "description": "腓肠肌是小腿后侧最表浅的肌肉，有两个头（内侧头和外侧头），分别起于股骨内、外上髁，与比目鱼肌合并后经跟腱止于跟骨。腓肠肌跨越膝关节和踝关节，因此同时参与屈膝和跖屈（踮脚尖）。站姿提踵主要刺激腓肠肌。腓肠肌赋予了小腿后侧的「心形」轮廓。",
+    "functions": ["踝关节跖屈（踮脚尖）", "辅助膝关节屈曲"],
+    "bodyMapPositions": {
+      "front": null,
+      "back": { "cx": 44, "cy": 92, "rx": 8, "ry": 6, "label": "腓肠肌" }
+    }
+  },
+  {
+    "id": "soleus",
+    "name": "比目鱼肌",
+    "nameEn": "Soleus",
+    "region": "legs",
+    "regionName": "腿部",
+    "subregion": "calf",
+    "subregionName": "小腿后侧",
+    "description": "比目鱼肌位于腓肠肌深层，起于胫骨和腓骨后面，与腓肠肌共同经跟腱止于跟骨。与腓肠肌不同，比目鱼肌不跨越膝关节，因此是纯粹的踝关节跖屈肌。坐姿提踵可以更好地隔离比目鱼肌（此时膝关节屈曲，腓肠肌处于缩短位而无法有效发力）。比目鱼肌对于站立姿势的维持和耐力行走非常重要。",
+    "functions": ["踝关节跖屈（主要跖屈肌之一）", "维持站立姿势"],
+    "bodyMapPositions": {
+      "front": null,
+      "back": { "cx": 44, "cy": 96, "rx": 7, "ry": 4, "label": "比目鱼肌" }
+    }
+  },
+  {
+    "id": "tibialis-anterior",
+    "name": "胫骨前肌",
+    "nameEn": "Tibialis Anterior",
+    "region": "legs",
+    "regionName": "腿部",
+    "subregion": "shin",
+    "subregionName": "小腿前侧",
+    "description": "胫骨前肌位于胫骨前外侧，是小腿前群肌中最粗大的一块，起于胫骨外侧面上2/3，止于内侧楔骨和第1跖骨底。主要功能是踝关节背屈（勾脚尖）和足内翻。它是步行摆动期抬离脚尖的关键肌肉——胫骨前肌无力会导致「足下垂」步态。胫骨前肌酸痛在使用跑步机或长时间上坡步行后很常见。",
+    "functions": ["踝关节背屈（勾脚尖）", "足内翻"],
+    "bodyMapPositions": {
+      "front": { "cx": 44, "cy": 92, "rx": 5, "ry": 8, "label": "胫骨前肌" },
+      "back": null
+    }
+  },
+  {
+    "id": "rectus-abdominis",
+    "name": "腹直肌",
+    "nameEn": "Rectus Abdominis",
+    "region": "core",
+    "regionName": "核心",
+    "subregion": "front-core",
+    "subregionName": "腹部前侧",
+    "description": "腹直肌是腹部前侧最表浅的纵行肌肉，起于耻骨联合和耻骨嵴，止于第5-7肋软骨和剑突。它被3-4条腱划分隔，形成了人们常说的「六块腹肌」的外观。主要功能是使脊柱前屈（卷腹动作）和维持腹内压。腹直肌的轮廓是否清晰主要取决于体脂率，而非单纯的训练量——俗话说「腹肌是在厨房里练出来的」。",
+    "functions": ["脊柱前屈（卷腹）", "维持腹内压", "辅助呼气", "骨盆后倾"],
+    "bodyMapPositions": {
+      "front": { "cx": 50, "cy": 40, "rx": 7, "ry": 12, "label": "腹直肌" },
+      "back": null
+    }
+  },
+  {
+    "id": "external-obliques",
+    "name": "腹外斜肌",
+    "nameEn": "External Obliques",
+    "region": "core",
+    "regionName": "核心",
+    "subregion": "side-core",
+    "subregionName": "腹部侧面",
+    "description": "腹外斜肌是腹部外侧最表浅的肌肉，起于下8根肋骨外面，肌纤维斜向前下走行，止于髂嵴和腹白线。主要功能是脊柱侧屈、对侧旋转和维持腹内压。发达的腹外斜肌形成腰部的「V形」线条（人鱼线），是腹部美观的重要组成部分。俄罗斯转体和侧平板支撑是训练腹外斜肌的有效动作。",
+    "functions": ["脊柱侧屈", "脊柱对侧旋转", "维持腹内压", "辅助呼气"],
+    "bodyMapPositions": {
+      "front": { "cx": 62, "cy": 40, "rx": 5, "ry": 10, "label": "腹外斜肌" },
+      "back": null
+    }
+  },
+  {
+    "id": "transversus-abdominis",
+    "name": "腹横肌",
+    "nameEn": "Transversus Abdominis",
+    "region": "core",
+    "regionName": "核心",
+    "subregion": "deep-core",
+    "subregionName": "深层核心",
+    "description": "腹横肌是腹部最深层的肌肉，其纤维呈水平方向环绕腹部，如同一个天然的「束腰带」。起于下6根肋软骨内面、胸腰筋膜、髂嵴内唇，止于腹白线。主要功能是压缩腹部、维持腹内压和稳定腰椎。它是核心稳定的关键——在所有大重量复合动作前，腹横肌的预激活对于保护脊柱至关重要。平板支撑是训练腹横肌的基础动作。",
+    "functions": ["压缩腹部", "维持腹内压", "稳定腰椎"],
+    "bodyMapPositions": {
+      "front": null,
+      "back": null
+    }
+  },
+  {
+    "id": "quadratus-lumborum",
+    "name": "腰方肌",
+    "nameEn": "Quadratus Lumborum",
+    "region": "core",
+    "regionName": "核心",
+    "subregion": "deep-core",
+    "subregionName": "深层核心",
+    "description": "腰方肌位于腰椎两侧的深层，起于髂嵴后部，止于第12肋骨下缘和上4个腰椎横突。主要功能是脊柱侧屈和稳定腰椎。它是连接骨盆和脊柱的重要桥梁，在行走、跑步中帮助维持骨盆的水平。腰方肌紧张是许多人下背痛的隐藏原因之一，针对性的拉伸和强化对下背部健康非常重要。",
+    "functions": ["脊柱侧屈", "稳定腰椎", "辅助呼吸（固定第12肋）"],
+    "bodyMapPositions": {
+      "front": null,
+      "back": null
+    }
+  }
+]

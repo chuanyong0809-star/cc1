@@ -1,0 +1,63 @@
+.muscle-list-page {
+  padding-bottom: var(--space-3xl);
+}
+
+.muscle-list-page__hero {
+  padding: var(--space-3xl) 0 var(--space-xl);
+  text-align: center;
+}
+
+.muscle-list-page__title {
+  font-size: var(--font-size-3xl);
+  font-weight: 800;
+  color: var(--color-text);
+  margin-bottom: var(--space-sm);
+}
+
+.muscle-list-page__subtitle {
+  font-size: var(--font-size-md);
+  color: var(--color-text-secondary);
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+/* Skeleton loading */
+.muscle-list-skeleton {
+  padding: var(--space-xl) 0;
+}
+
+.muscle-list-skeleton__section {
+  margin-bottom: var(--space-2xl);
+}
+
+.muscle-list-skeleton__title {
+  width: 120px;
+  height: 28px;
+  margin-bottom: var(--space-md);
+}
+
+.muscle-list-skeleton__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-md);
+}
+
+.muscle-list-skeleton__card {
+  height: 120px;
+}
+
+@media (max-width: 1024px) {
+  .muscle-list-skeleton__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .muscle-list-skeleton__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .muscle-list-page__title {
+    font-size: var(--font-size-2xl);
+  }
+}

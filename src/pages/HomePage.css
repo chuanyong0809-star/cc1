@@ -1,0 +1,24 @@
+.home-hero {
+  text-align: center;
+  padding: var(--space-3xl) 0;
+}
+
+.home-hero__title {
+  font-size: var(--font-size-3xl);
+  background: linear-gradient(135deg, var(--color-accent), var(--color-shoulders));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.home-hero__subtitle {
+  margin-top: var(--space-md);
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-lg);
+}
+
+.home-hero__coming {
+  margin-top: var(--space-xl);
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+}
